@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalyze - A better way to deliver software</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter for body & Poppins for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* Custom Theme Colors */
+    :root {
+      --color-gunmetal: #1F1F1F;
+      --color-jet-black: #121212;
+      --color-lava: #E63946;
+      --color-lightText: #F1F5F9;
+      --border-color: #3D3D3D;
+    }
+
+    body {
+      font-family: 'PP Neue Montreal', sans-serif;
+      background-color: var(--color-jet-black);
+      color: var(--color-lightText);
+    }
+
+    h1, h2, h3, .font-heading {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .shiki {
+      background: transparent !important;
+    }
+
+    .card {}
+  </style>
+</head>
+<body class="antialiased">
+<!-- Navigation -->
+<nav class="bg-[var(--color-jet-black)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-shrink-0">
+        <a href="#" class="text-2xl font-heading font-bold text-[var(--color-lava)]">
+          Catalyze
+        </a>
+      </div>
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          <a href="#features" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[var(--color-lava)]">
+            Features
+          </a>
+          <a href="#integrations" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[var(--color-lava)]">
+            Integrations
+          </a>
+          <a href="#waitlist" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[var(--color-lava)]">
+            Waitlist
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-20 text-center">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-heading font-bold mb-4 text-[var(--color-lava)]">
+      Software Delivery
+    </h1>
+    <p class="text-xl mb-6 whitespace-normal max-w-[51%]">
+      Catalyze is an open source software delivery platform that empowers you to configure your pipelines as code and integrate your favorite tools.
+    </p>
+    <div id="code" class="card flex w-fit border-[var(--color-gunmetal)] text-sm border-[1px] p-5 rounded-md mb-4"></div>
+    <p class="text-lg mb-8">
+      Built by developers, for developers — designed for humans, not machines.
+    </p>
+    <a href="#waitlist" class="bg-[var(--color-lava)] w-fit text-md hover:bg-red-600 text-white font-medium p-4 h-10 rounded-sm justify-center items-center flex relative">
+      Join the waitlist
+    </a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-20 bg-[var(--color-jet-black)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-heading font-bold text-[var(--color-lava)]">
+        Features
+      </h2>
+      <p class="mt-4 text-lg">
+        Enjoy opinionated workflows for atomic single tenant deployments with deep integrations and an innovative code-first approach.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-[var(--color-gunmetal)] rounded-lg shadow-lg">
+        <h3 class="text-2xl font-heading font-bold mb-2 text-[var(--color-lava)]">
+          CLI First
+        </h3>
+        <p>
+          Start with a lightweight CLI that requires no managed servers, giving you complete control over your deployments.
+        </p>
+      </div>
+      <div class="p-6 bg-[var(--color-gunmetal)] rounded-lg shadow-lg">
+        <h3 class="text-2xl font-heading font-bold mb-2 text-[var(--color-lava)]">
+          Deep Integrations
+        </h3>
+        <p>
+          Seamlessly integrate with your favorite tools like GitHub, GitLab, Jenkins, and more.
+        </p>
+      </div>
+      <div class="p-6 bg-[var(--color-gunmetal)] rounded-lg shadow-lg">
+        <h3 class="text-2xl font-heading font-bold mb-2 text-[var(--color-lava)]">
+          Pipelines as Code
+        </h3>
+        <p>
+          Define your pipelines in your preferred language (TypeScript, Python, Go, etc.) instead of using YAML or JSON. Our CDK and PDK empower you to code your deployments.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Integrations Section -->
+<section id="integrations" class="py-20 bg-[var(--color-gunmetal)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-heading font-bold mb-4 text-[var(--color-lava)]">
+      Seamless Integrations
+    </h2>
+    <p class="text-lg mb-8">
+      Catalyze works with the tools you already use—bringing your CI/CD processes together under one roof.
+    </p>
+    <div class="flex justify-center space-x-8">
+      <!-- Replace these placeholders with your actual logos -->
+      <img src="https://via.placeholder.com/100x50?text=GitHub" alt="GitHub Logo" class="h-12">
+      <img src="https://via.placeholder.com/100x50?text=GitLab" alt="GitLab Logo" class="h-12">
+      <img src="https://via.placeholder.com/100x50?text=Jenkins" alt="Jenkins Logo" class="h-12">
+    </div>
+  </div>
+</section>
+
+<!-- Waitlist Section -->
+<section id="waitlist" class="py-20 bg-[var(--color-jet-black)]">
+  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-[var(--color-gunmetal)] p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-heading font-bold mb-4 text-[var(--color-lava)] text-center">
+        Join the Waitlist
+      </h2>
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-medium">Email address</label>
+          <input type="email" name="email" id="email" required
+                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-[var(--color-jet-black)] text-[var(--color-lightText)] focus:ring-[var(--color-lava)] focus:border-[var(--color-lava)]">
+        </div>
+        <div>
+          <button type="submit" class="bg-[var(--color-lava)] text-md hover:bg-red-600 text-white font-medium p-4 h-10 rounded-sm justify-center items-center flex relative">
+            Join now
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[var(--color-jet-black)] py-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-sm">&copy; 2025 Catalyze. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { codeToHtml } from 'https://esm.sh/shiki@1.0.0';
+
+  const content = `import { DeployStep, DeploymentStage, Pipeline, Step } from '@catalyze/cdk';
+import * as environmentGroups from './environment-groups.ts';
+
+export const deployCustomers = new Pipeline('deploy-customers', {
+  stages: [
+    new DeploymentStage('deploy')
+      .withEnvironmentGroup(environmentGroups.customers)
+      .addStepForEachEnvironment(
+        environment => new DeployStep('deploy', { environment }),
+      ),
+  ],
+});`;
+
+  const code = document.getElementById('code');
+  code.innerHTML = await codeToHtml(content, {
+    lang: 'js',
+    theme: 'github-dark',
+  });
+</script>
+</body>
+</html>
